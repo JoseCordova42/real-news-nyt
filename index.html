@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="row">
+            <div class="card">
+                <h5 class="card-header">Search Parameters</h5>
+                <div class="card-body">
+                    <div class="searchBox">
+                        <label for="Search" class="form-label">Search Term:</label>
+                        <input type="text" class="form-control" id="search">
+                    </div>
+                    <br>
+
+                    <div class="recordsBox">
+                        <label for="numRecords" class="form-label">Number of Records to Retrieve:</label>
+                        <input type="text" class="form-control" id="numRecords">
+                    </div>
+                    <br>
+
+                    <div class="startBox">
+                        <label for="startYear" class="form-label">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="startYear">
+                    </div>
+                    <br>
+
+                    <div class="endBox">
+                        <label for="endYear" class="form-label">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="endYear">
+                    </div>
+                    <br>
+
+                    <div class="buttonsBox">
+                        <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+                        <button type="button" class="btn btn-primary" id="clearBtn">Clear Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="card">
+                <h5 class="card-header">Top Articles</h5>
+                <div class="card-body" id="topArticles">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
